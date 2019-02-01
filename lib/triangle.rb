@@ -7,7 +7,7 @@ class Triangle
     @c = c
   end
 
-  def kind
+def kind
 
   if !valid?
       raise TriangleError
