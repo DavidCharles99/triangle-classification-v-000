@@ -11,9 +11,9 @@ class Triangle
 
     if !valid?
       raise TriangleError
-    elsif @a == @c && @b == @a && @c == @b
+    elsif a == c && b == a && c == b
       :equilateral
-    elsif @a == @b || @a == @c || @b == @c
+    elsif a == b || a == c || b == c
       :isosceles
     else
       :scalene
