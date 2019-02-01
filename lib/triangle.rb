@@ -9,7 +9,7 @@ class Triangle
 
   def kind
 
-    if !valid?
+  if !valid?
       raise TriangleError
     elsif a == c && b == a && c == b
       :equilateral
