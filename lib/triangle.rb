@@ -24,9 +24,7 @@ class Triangle
     triangle = [@a, @b, @c].all? {|side| side > 0}
     triangle && (@a + @b > @c) && (@a + @c > @b) && (@b + @c > @a)
   end
-
-
-
-
-
 end
+
+class TriangleError < StandardError
+end 
