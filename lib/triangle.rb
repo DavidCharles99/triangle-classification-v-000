@@ -22,7 +22,7 @@ class Triangle
 
   def valid?
     triangle = [a, b, c].all? {|side| side > 0}
-    triangle && (c + a > b) && (b + c > a) && (b + c > a)
+    triangle && (c + a > b) && (b + c > a) && (b + a > c)
   end
 end
 
