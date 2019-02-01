@@ -11,7 +11,6 @@ class Triangle
 
     if !valid?
       raise TriangleError
-      TriangleError
     elsif @a == @c && @b == @a && @c == @b
       :equilateral
     elsif @a == @b || @a == @c || @b == @c
